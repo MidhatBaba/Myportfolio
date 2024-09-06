@@ -24,8 +24,17 @@ body{
     background-image: url(images/background3.jpeg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
-
+/* Styles for screens 600px and below */
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url(images/background3.jpeg); /* Ensure the same image is used on mobile */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
 .container{
     padding: 15px 8%;
 }
